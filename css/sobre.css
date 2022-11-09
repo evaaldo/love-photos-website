@@ -1,0 +1,35 @@
+.sobre {
+    padding: 2.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--fundo-sobre);
+}
+
+.sobre__titulo {
+    margin-bottom: .5em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.sobre__texto strong {
+    font-weight: 600;
+}
+
+.sobre__texto {
+    text-align: center;
+    width: 30em;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .sobre {
+        padding: 2em 0;
+    }
+
+    .sobre__texto {
+        width: 22em;
+    }
+
+}

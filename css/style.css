@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('header.css');
+@import url('sobre.css');
+@import url('servicos.css');
+
+:root {
+    --fonte-principal: "Poppins";
+    --branco: #fff;
+    --preto: #000;
+    --cor-de-fundo: #150050;
+    --laranja: #e68c60;
+    --fundo-padrao: #EEEEEE;
+    --fundo-sobre: #CFB997;
+    --cinza: #B2B2B2;
+    --marrom: #F0EBCE;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+}
+
+body {
+    background-color: var(--fundo-padrao);
+}
