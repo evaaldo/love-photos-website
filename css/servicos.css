@@ -54,7 +54,39 @@
     opacity: .7;
 }
 
+.servicos__container-mobile {
+    display: none;
+}
+
 @media screen and (max-width: 1024px) {
-    
+
+    .servicos__container-mobile {
+        display: block;
+    }
+
+    .servicos__container {
+        display: none;
+    }
+
+    .subfotos-mobile {
+        width: 150px;
+        height: 160px;
+        box-shadow: 2px 2px 5px 2px var(--preto);
+    }
+
+    .servicos__texto {
+        padding: .3em;
+    }
+
+    .container_1-mobile {
+        background-color: var(--cinza);
+        padding-bottom: 2em;
+    }
+
+    .container_2-mobile {
+        background-color: var(--marrom);
+        padding-bottom: 2em;
+    }
+
 }
 
