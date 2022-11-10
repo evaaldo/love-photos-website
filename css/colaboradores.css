@@ -1,0 +1,33 @@
+.colaboradores {
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.colaborador-1 {
+    width: 50vw;
+}
+
+.colaborador-2 {
+    width: 50vw;
+}
+
+.colaborador__titulo {
+    font-weight: 700;
+    padding: 1em 0;
+}
+
+.colaborador__img {
+    width: 250px;
+    width: 250px;
+    border-radius: 150px;
+}
+
+.colaborador__texto {
+    padding: 1em 3em;
+}
+
+.texto-mayara {
+    padding: 1.95em 2.5em;
+}
