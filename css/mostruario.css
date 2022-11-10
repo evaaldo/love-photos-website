@@ -54,6 +54,8 @@
     font-size: 1.5em;
     width: 200px;
     cursor: pointer;
+    border: none;
+    transition: all .3s;
 }
 
 .mostruario__produto-botao:active {
@@ -66,4 +68,23 @@
     align-items: center;
     justify-content: center;
     gap: .5em;
+}
+
+.mostruario__mostra-mais {
+    display: none;
+}
+
+.mostruario__botao {
+    margin-top: 1.5em;
+    color: var(--branco);
+    background-color: transparent;
+    border: none;
+    font-weight: 700;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all .1s;
+}
+
+.mostruario__botao:hover {
+    transform: scale(1.05);
 }

@@ -8,9 +8,11 @@
 
     <link rel="stylesheet" href="/css/style.css">
     <link rel="icon" href="/img/love-logo.png">
-
+    
+    <script src="https://kit.fontawesome.com/88cbac72fc.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/88cbac72fc.js" crossorigin="anonymous" defer></script>
-    <script src="/js/main.js" defer></script>
+    <script src="/js/sidebar.js" defer></script>
+    <script src="/js/show-hide.js" defer></script>
 </head>
 <body>
     <header class="cabecalho">
@@ -128,6 +130,99 @@
                     <p class="mostruario__produto-descricao">Polaroid de mesa caça-palavras</p>
                     <p class="mostruario__produto-preco">R$29.90</p>
                     <button class="mostruario__produto-botao">Comprar</button>
+                </div>
+            </div>
+            <button id="mostra-produtos" class="mostruario__botao">Mostrar produtos<br><i class="fa-solid fa-arrow-down"></i></button>
+            <div id="mostruario__escondido" class="mostruario__mostra-mais">
+                <div class="mostruario__produto-container">
+                    <div class="mostruario__produto -1">
+                        <h1 class="mostruario__produto-titulo">Foto polaroid</h1>
+                        <img src="/img/produto-1.png" class="produto" alt="Foto polaroid">
+                        <p class="mostruario__produto-descricao">Foto polaroid simples (sem ímã)</p>
+                        <p class="mostruario__produto-preco">R$24.90</p>
+                        <button class="mostruario__produto-botao">Comprar</button>
+                    </div>
+                    <div class="mostruario__produto -2">
+                        <h1 class="mostruario__produto-titulo">Ímã polaroid</h1>
+                        <img src="/img/produto-2.png" class="produto" alt="Foto polaroid ímã">
+                        <p class="mostruario__produto-descricao">Foto polaroid com ímã</p>
+                        <p class="mostruario__produto-preco">R$29.90</p>
+                        <button class="mostruario__produto-botao">Comprar</button>
+                    </div>
+                    <div class="mostruario__produto -3">
+                        <h1 class="mostruario__produto-titulo">Polaroid de mesa</h1>
+                        <img src="/img/produto-3.png" class="produto" alt="Polaroid de mesa spotify">
+                        <p class="mostruario__produto-descricao">Polaroid de mesa com foto desejada</p>
+                        <p class="mostruario__produto-preco">R$29.90</p>
+                        <button class="mostruario__produto-botao">Comprar</button>
+                    </div>
+                    <div class="mostruario__produto -4">
+                        <h1 class="mostruario__produto-titulo"> Polaroid de mesa</h1>
+                        <img src="/img/produto-4.png" class="produto" alt="Polaroid de mesa caça-palavras">
+                        <p class="mostruario__produto-descricao">Polaroid de mesa caça-palavras</p>
+                        <p class="mostruario__produto-preco">R$29.90</p>
+                        <button class="mostruario__produto-botao">Comprar</button>
+                    </div>
+                </div>
+                <div class="mostruario__produto-container">
+                    <div class="mostruario__produto -1">
+                        <h1 class="mostruario__produto-titulo">Foto polaroid</h1>
+                        <img src="/img/produto-1.png" class="produto" alt="Foto polaroid">
+                        <p class="mostruario__produto-descricao">Foto polaroid simples (sem ímã)</p>
+                        <p class="mostruario__produto-preco">R$24.90</p>
+                        <button class="mostruario__produto-botao">Comprar</button>
+                    </div>
+                    <div class="mostruario__produto -2">
+                        <h1 class="mostruario__produto-titulo">Ímã polaroid</h1>
+                        <img src="/img/produto-2.png" class="produto" alt="Foto polaroid ímã">
+                        <p class="mostruario__produto-descricao">Foto polaroid com ímã</p>
+                        <p class="mostruario__produto-preco">R$29.90</p>
+                        <button class="mostruario__produto-botao">Comprar</button>
+                    </div>
+                    <div class="mostruario__produto -3">
+                        <h1 class="mostruario__produto-titulo">Polaroid de mesa</h1>
+                        <img src="/img/produto-3.png" class="produto" alt="Polaroid de mesa spotify">
+                        <p class="mostruario__produto-descricao">Polaroid de mesa com foto desejada</p>
+                        <p class="mostruario__produto-preco">R$29.90</p>
+                        <button class="mostruario__produto-botao">Comprar</button>
+                    </div>
+                    <div class="mostruario__produto -4">
+                        <h1 class="mostruario__produto-titulo"> Polaroid de mesa</h1>
+                        <img src="/img/produto-4.png" class="produto" alt="Polaroid de mesa caça-palavras">
+                        <p class="mostruario__produto-descricao">Polaroid de mesa caça-palavras</p>
+                        <p class="mostruario__produto-preco">R$29.90</p>
+                        <button class="mostruario__produto-botao">Comprar</button>
+                    </div>
+                </div>
+                <div class="mostruario__produto-container">
+                    <div class="mostruario__produto -1">
+                        <h1 class="mostruario__produto-titulo">Foto polaroid</h1>
+                        <img src="/img/produto-1.png" class="produto" alt="Foto polaroid">
+                        <p class="mostruario__produto-descricao">Foto polaroid simples (sem ímã)</p>
+                        <p class="mostruario__produto-preco">R$24.90</p>
+                        <button class="mostruario__produto-botao">Comprar</button>
+                    </div>
+                    <div class="mostruario__produto -2">
+                        <h1 class="mostruario__produto-titulo">Ímã polaroid</h1>
+                        <img src="/img/produto-2.png" class="produto" alt="Foto polaroid ímã">
+                        <p class="mostruario__produto-descricao">Foto polaroid com ímã</p>
+                        <p class="mostruario__produto-preco">R$29.90</p>
+                        <button class="mostruario__produto-botao">Comprar</button>
+                    </div>
+                    <div class="mostruario__produto -3">
+                        <h1 class="mostruario__produto-titulo">Polaroid de mesa</h1>
+                        <img src="/img/produto-3.png" class="produto" alt="Polaroid de mesa spotify">
+                        <p class="mostruario__produto-descricao">Polaroid de mesa com foto desejada</p>
+                        <p class="mostruario__produto-preco">R$29.90</p>
+                        <button class="mostruario__produto-botao">Comprar</button>
+                    </div>
+                    <div class="mostruario__produto -4">
+                        <h1 class="mostruario__produto-titulo"> Polaroid de mesa</h1>
+                        <img src="/img/produto-4.png" class="produto" alt="Polaroid de mesa caça-palavras">
+                        <p class="mostruario__produto-descricao">Polaroid de mesa caça-palavras</p>
+                        <p class="mostruario__produto-preco">R$29.90</p>
+                        <button class="mostruario__produto-botao">Comprar</button>
+                    </div>
                 </div>
             </div>
     </section>
