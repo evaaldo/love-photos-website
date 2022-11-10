@@ -27,6 +27,7 @@
 .mostruario__produto-descricao {
     color: var(--branco);
     text-align: center;
+    font-size: .7em;
 }
 
 .mostruario__produto-preco {
@@ -87,4 +88,8 @@
 
 .mostruario__botao:hover {
     transform: scale(1.05);
+}
+
+.frete {
+    background-color: var(--azul-ultra);
 }
