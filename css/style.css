@@ -2,6 +2,7 @@
 @import url('header.css');
 @import url('sobre.css');
 @import url('servicos.css');
+@import url('mostruario.css');
 
 :root {
     --fonte-principal: "Poppins";
@@ -13,6 +14,7 @@
     --fundo-sobre: #CFB997;
     --cinza: #B2B2B2;
     --marrom: #F0EBCE;
+    --verde: #54B435;
 }
 
 * {

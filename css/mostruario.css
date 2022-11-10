@@ -1,0 +1,69 @@
+.mostruario__container-mobile {
+    display: none;
+}
+
+.mostruario__produtos {
+    background-color: var(--cor-de-fundo);
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mostruario__produto-titulo {
+    color: var(--branco);
+    padding: 1em;
+    text-align: center;
+    font-weight: 700;
+}
+
+.produto {
+    width: 300px;
+    height: 300px;
+    border: 5px solid var(--branco);
+}
+
+.mostruario__produto-descricao {
+    color: var(--branco);
+    text-align: center;
+}
+
+.mostruario__produto-preco {
+    text-align: center;
+    color: var(--verde);
+    font-weight: 700;
+}
+
+.mostruario__produto-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.principal {
+    font-size: 2em;
+}
+
+.mostruario__produto-botao {
+    background-color: var(--verde);
+    padding: .5em;
+    color: var(--branco);
+    font-weight: 700;
+    font-size: 1.5em;
+    width: 200px;
+    cursor: pointer;
+}
+
+.mostruario__produto-botao:active {
+    transform: scale(1.05);
+}
+
+.mostruario__produto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
+}
