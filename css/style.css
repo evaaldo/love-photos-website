@@ -4,6 +4,7 @@
 @import url('servicos.css');
 @import url('mostruario.css');
 @import url('colaboradores.css');
+@import url('contato.css');
 
 :root {
     --fonte-principal: "Poppins";

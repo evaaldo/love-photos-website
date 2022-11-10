@@ -1,0 +1,38 @@
+.contato {
+    padding: 2em;
+    background-color: var(--cor-de-fundo);
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.contato__aviso {
+    width: 50vh;
+}
+
+.contato__telefones-rede {
+    width: 50vh;
+}
+
+.contato__titulo {
+    padding: .8em 0;
+    color: var(--branco);
+    font-weight: 700;
+}
+
+.contato__fone {
+    color: var(--branco);
+}
+
+.contato__texto {
+    color: var(--branco);
+    font-size: .8em;
+}
+
+.fa-instagram {
+    padding-top: .3em;
+    color: var(--branco);
+    font-size: 3em;
+}
