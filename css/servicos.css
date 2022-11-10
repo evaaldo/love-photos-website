@@ -8,7 +8,8 @@
 }
 
 .servicos__imagem {
-    height: 550px;
+    width: 550px;
+    height: 575px;
 }
 
 .servicos__textos {
@@ -44,6 +45,7 @@
 }
 
 .subfotos {
+    margin: 1em ;
     box-shadow: 2px 2px 5px 2px var(--preto);
     width: 250px;
     height: 250px;
