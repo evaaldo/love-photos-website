@@ -93,3 +93,43 @@
 .frete {
     background-color: var(--azul-ultra);
 }
+
+.mostruario__mobile {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .swiper__titulo {
+        font-weight: 700;
+        color: var(--laranja-escuro);
+        text-align: center;
+        padding-top: .5em;
+    }
+
+    .mostruario__desktop {
+        display: none;
+    }
+
+    .mostruario__produto {
+        padding: 0 1em;
+    }
+
+    .mostruario__mobile {
+        display: block;
+        background-color: var(--cor-de-fundo);
+        padding-bottom: 3em;
+    }
+
+    .mostruario__produto-descricao {
+        font-weight: 400;
+        color: var(--branco);
+        text-align: center;
+        font-size: 1em;
+    }
+
+    .swiper-pagination {
+        position: initial;
+    }
+
+}

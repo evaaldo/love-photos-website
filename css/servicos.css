@@ -90,5 +90,10 @@
         padding-bottom: 2em;
     }
 
+    .container_3-mobile {
+        background-color: var(--cinza);
+        padding-bottom: 2em;
+    }
+
 }
 

@@ -10,8 +10,9 @@
     <link rel="icon" href="/img/love-logo.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     
-    <script src="https://kit.fontawesome.com/88cbac72fc.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/88cbac72fc.js" crossorigin="anonymous" defer></script>
+    <script src="https://kit.fontawesome.com/88cbac72fc.js" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
     <script src="/js/sidebar.js" defer></script>
     <script src="/js/show-hide.js" defer></script>
     <script src="/js/swiper.js" defer></script>
@@ -115,43 +116,192 @@
                 </div>
             </div>
         </div>
+        <div class="servicos__container-mobile container_3-mobile">
+            <h2 class="servicos__titulo">Álbum de fotos</h2>
+            <p class="servicos__texto">
+                O nosso álbum de fotos polaroid é um serviço em que juntamos 10 polaroid tradicionais dentro de um caderninho feito com bastante carinho.
+            </p>
+            <div class="servicos__subfotos">
+                <img src="/img/foto-5.png" alt="foto polaroid" class="subfotos-mobile">
+                <img src="/img/foto-6.png" alt="foto polaroid ímã" class="subfotos-mobile">
+            </div>
+        </div>
     </section>
     <section id="mostruario" class="mostruario">
-        <div class="mostruario__produtos">
-            <h1 class="mostruario__produto-titulo principal">Mostruário</h1>
-            <div class="mostruario__produto-container">
-                <div class="mostruario__produto -1">
-                    <h1 class="mostruario__produto-titulo">Foto polaroid</h1>
-                    <img src="/img/produto-1.png" class="produto" alt="Foto polaroid">
-                    <p class="mostruario__produto-descricao">Foto polaroid simples (sem ímã) - pacote com 10 unidades</p>
-                    <p class="mostruario__produto-preco">R$24.90</p>
-                    <button class="mostruario__produto-botao">Comprar</button>
+        <div class="mostruario__desktop">
+            <div class="mostruario__produtos">
+                <h1 class="mostruario__produto-titulo principal">Mostruário</h1>
+                <div class="mostruario__produto-container">
+                    <div class="mostruario__produto -1">
+                        <h1 class="mostruario__produto-titulo">Foto polaroid</h1>
+                        <img src="/img/produto-1.png" class="produto" alt="Foto polaroid">
+                        <p class="mostruario__produto-descricao">Foto polaroid simples (sem ímã) - pacote com 10 unidades</p>
+                        <p class="mostruario__produto-preco">R$24.90</p>
+                        <button class="mostruario__produto-botao">Comprar</button>
+                    </div>
+                    <div class="mostruario__produto -2">
+                        <h1 class="mostruario__produto-titulo">Ímã polaroid</h1>
+                        <img src="/img/produto-2.png" class="produto" alt="Foto polaroid ímã">
+                        <p class="mostruario__produto-descricao">Foto polaroid com ímã - pacote com 10 unidades</p>
+                        <p class="mostruario__produto-preco">R$34.90</p>
+                        <button class="mostruario__produto-botao">Comprar</button>
+                    </div>
+                    <div class="mostruario__produto -3">
+                        <h1 class="mostruario__produto-titulo">Polaroid de mesa</h1>
+                        <img src="/img/produto-3.png" class="produto" alt="Polaroid de mesa spotify">
+                        <p class="mostruario__produto-descricao">Polaroid de mesa com foto desejada - QR code</p>
+                        <p class="mostruario__produto-preco">R$34.90</p>
+                        <button class="mostruario__produto-botao">Comprar</button>
+                    </div>
+                    <div class="mostruario__produto -4">
+                        <h1 class="mostruario__produto-titulo"> Polaroid de mesa</h1>
+                        <img src="/img/produto-4.png" class="produto" alt="Polaroid de mesa caça-palavras">
+                        <p class="mostruario__produto-descricao">Polaroid de mesa caça-palavras - QR code</p>
+                        <p class="mostruario__produto-preco">R$34.90</p>
+                        <button class="mostruario__produto-botao">Comprar</button>
+                    </div>
                 </div>
-                <div class="mostruario__produto -2">
-                    <h1 class="mostruario__produto-titulo">Ímã polaroid</h1>
-                    <img src="/img/produto-2.png" class="produto" alt="Foto polaroid ímã">
-                    <p class="mostruario__produto-descricao">Foto polaroid com ímã - pacote com 10 unidades</p>
-                    <p class="mostruario__produto-preco">R$34.90</p>
-                    <button class="mostruario__produto-botao">Comprar</button>
-                </div>
-                <div class="mostruario__produto -3">
-                    <h1 class="mostruario__produto-titulo">Polaroid de mesa</h1>
-                    <img src="/img/produto-3.png" class="produto" alt="Polaroid de mesa spotify">
-                    <p class="mostruario__produto-descricao">Polaroid de mesa com foto desejada - QR code</p>
-                    <p class="mostruario__produto-preco">R$34.90</p>
-                    <button class="mostruario__produto-botao">Comprar</button>
-                </div>
-                <div class="mostruario__produto -4">
-                    <h1 class="mostruario__produto-titulo"> Polaroid de mesa</h1>
-                    <img src="/img/produto-4.png" class="produto" alt="Polaroid de mesa caça-palavras">
-                    <p class="mostruario__produto-descricao">Polaroid de mesa caça-palavras - QR code</p>
-                    <p class="mostruario__produto-preco">R$34.90</p>
-                    <button class="mostruario__produto-botao">Comprar</button>
+                <button id="mostra-produtos" class="mostruario__botao">Mostrar mais produtos<br><i class="fa-solid fa-arrow-down"></i></button>
+                <div id="mostruario__escondido" class="mostruario__mostra-mais">
+                    <div class="mostruario__produto-container">
+                        <div class="mostruario__produto -1">
+                            <h1 class="mostruario__produto-titulo">Foto polaroid</h1>
+                            <img src="/img/produto-5.png" class="produto" alt="Foto polaroid cabine">
+                            <p class="mostruario__produto-descricao">Foto cabine/tirinha (pacote com 4 tirinhas - 3 fotos por unidade)</p>
+                            <p class="mostruario__produto-preco">R$29.90</p>
+                            <button class="mostruario__produto-botao">Comprar</button>
+                        </div>
+                        <div class="mostruario__produto -2">
+                            <h1 class="mostruario__produto-titulo">Polaroid varal</h1>
+                            <img src="/img/produto-6.png" class="produto" alt="Polaroid varal">
+                            <p class="mostruario__produto-descricao">Porta-retrato varal (acompanha 5 polaroids e 5 mini pregadores)</p>
+                            <p class="mostruario__produto-preco">R$49.90</p>
+                            <button class="mostruario__produto-botao">Comprar</button>
+                        </div>
+                        <div class="mostruario__produto -3">
+                            <h1 class="mostruario__produto-titulo">Combo love</h1>
+                            <img src="/img/produto-7.png" class="produto" alt="Combo love photos">
+                            <p class="mostruario__produto-descricao">Combo love (acompanha: 10 polaroid tradicional + 10 mini pregadores + varal)</p>
+                            <p class="mostruario__produto-preco">R$29.90</p>
+                            <button class="mostruario__produto-botao">Comprar</button>
+                        </div>
+                        <div class="mostruario__produto -4">
+                            <h1 class="mostruario__produto-titulo">Combo álbum love</h1>
+                            <img src="/img/servico__foto-3.png" class="produto" alt="Combo álbum love">
+                            <p class="mostruario__produto-descricao">Combo álbum (acompanha: álbum + 10 polaroid tradicional + whasi tape adesiva)</p>
+                            <p class="mostruario__produto-preco">R$69.90</p>
+                            <button class="mostruario__produto-botao">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="mostruario__produto-container">
+                        <div class="mostruario__produto -1">
+                            <h1 class="mostruario__produto-titulo">Mini pregador</h1>
+                            <img src="/img/produto-8.png" class="produto" alt="Mini pregador">
+                            <p class="mostruario__produto-descricao">Pacote com 10 unidades</p>
+                            <p class="mostruario__produto-preco">R$6.00</p>
+                            <button class="mostruario__produto-botao">Comprar</button>
+                        </div>
+                        <div class="mostruario__produto -2">
+                            <h1 class="mostruario__produto-titulo">Legendas</h1>
+                            <img src="/img/produto-9.png" class="produto" alt="Legendas">
+                            <p class="mostruario__produto-descricao">Legendas (unidade)</p>
+                            <p class="mostruario__produto-preco">R$0.50</p>
+                            <button class="mostruario__produto-botao">Comprar</button>
+                        </div>
+                        <div class="mostruario__produto -3">
+                            <h1 class="mostruario__produto-titulo">Calendário love ímã</h1>
+                            <img src="/img/produto-10.png" class="produto" alt="Calendário love ímã">
+                            <p class="mostruario__produto-descricao">Calendário love ímã (pacote com 12 unidades)</p>
+                            <p class="mostruario__produto-preco">R$39.90</p>
+                            <button class="mostruario__produto-botao">Comprar</button>
+                        </div>
+                        <div class="mostruario__produto -4">
+                            <h1 class="mostruario__produto-titulo">Álbum de geladeira</h1>
+                            <img src="/img/produto-11.png" class="produto" alt="Álbum de geladeira">
+                            <p class="mostruario__produto-descricao">Álbum de geladeira (pacote com 10 unidades de polaroid tradicional - ímã)</p>
+                            <p class="mostruario__produto-preco">R$29.90</p>
+                            <button class="mostruario__produto-botao">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="mostruario__produto-container">
+                        <div class="mostruario__produto -1">
+                            <h1 class="mostruario__produto-titulo">Polaroid de mesa</h1>
+                            <img src="/img/produto-12.png" class="produto" alt="Polaroid de mesa frase">
+                            <p class="mostruario__produto-descricao">Polaroid de mesa (frase)</p>
+                            <p class="mostruario__produto-preco">R$34.90</p>
+                            <button class="mostruario__produto-botao">Comprar</button>
+                        </div>
+                        <div class="mostruario__produto -2">
+                            <h1 class="mostruario__produto-titulo">Polaroid de mesa</h1>
+                            <img src="/img/produto-13.png" class="produto" alt="Polaroid de mesa frase + QR code">
+                            <p class="mostruario__produto-descricao">Polaroid de mesa frase + QR code (deezer, spotify ou youtube)</p>
+                            <p class="mostruario__produto-preco">R$34.90</p>
+                            <button class="mostruario__produto-botao">Comprar</button>
+                        </div>
+                        <div class="mostruario__produto -3">
+                            <h1 class="mostruario__produto-titulo">Ímã 6x6</h1>
+                            <img src="/img/produto-14.png" class="produto" alt="Ímã 6x6">
+                            <p class="mostruario__produto-descricao">Ímã 6x6 (pacote com 12 unidades)</p>
+                            <p class="mostruario__produto-preco">R$39.90</p>
+                            <button class="mostruario__produto-botao">Comprar</button>
+                        </div>
+                        <div class="mostruario__produto -3">
+                            <h1 class="mostruario__produto-titulo">Frete</h1>
+                            <img src="/img/frete.png" class="produto" alt="Frete">
+                            <p class="mostruario__produto-descricao">Frete para qualquer bairro de Fortaleza (consultar região metropolitana)</p>
+                            <p class="mostruario__produto-preco">R$12.00</p>
+                            <button class="mostruario__produto-botao frete">Adicionar</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <button id="mostra-produtos" class="mostruario__botao">Mostrar mais produtos<br><i class="fa-solid fa-arrow-down"></i></button>
-            <div id="mostruario__escondido" class="mostruario__mostra-mais">
-                <div class="mostruario__produto-container">
+        </div>
+        <div class="mostruario__mobile">
+            <!-- Slider main container -->
+            <div class="swiper">
+
+                <h1 class="swiper__titulo">Arrasta pro lado</h1>
+
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="mostruario__produto -1">
+                        <h1 class="mostruario__produto-titulo">Foto polaroid</h1>
+                        <img src="/img/produto-1.png" class="produto" alt="Foto polaroid">
+                        <p class="mostruario__produto-descricao">Foto polaroid simples (sem ímã) - pacote com 10 unidades</p>
+                        <p class="mostruario__produto-preco">R$24.90</p>
+                        <button class="mostruario__produto-botao">Comprar</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="mostruario__produto -2">
+                        <h1 class="mostruario__produto-titulo">Ímã polaroid</h1>
+                        <img src="/img/produto-2.png" class="produto" alt="Foto polaroid ímã">
+                        <p class="mostruario__produto-descricao">Foto polaroid com ímã - pacote com 10 unidades</p>
+                        <p class="mostruario__produto-preco">R$34.90</p>
+                        <button class="mostruario__produto-botao">Comprar</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="mostruario__produto -3">
+                        <h1 class="mostruario__produto-titulo">Polaroid de mesa</h1>
+                        <img src="/img/produto-3.png" class="produto" alt="Polaroid de mesa spotify">
+                        <p class="mostruario__produto-descricao">Polaroid de mesa com foto desejada - QR code</p>
+                        <p class="mostruario__produto-preco">R$34.90</p>
+                        <button class="mostruario__produto-botao">Comprar</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="mostruario__produto -4">
+                        <h1 class="mostruario__produto-titulo"> Polaroid de mesa</h1>
+                        <img src="/img/produto-4.png" class="produto" alt="Polaroid de mesa caça-palavras">
+                        <p class="mostruario__produto-descricao">Polaroid de mesa caça-palavras - QR code</p>
+                        <p class="mostruario__produto-preco">R$34.90</p>
+                        <button class="mostruario__produto-botao">Comprar</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
                     <div class="mostruario__produto -1">
                         <h1 class="mostruario__produto-titulo">Foto polaroid</h1>
                         <img src="/img/produto-5.png" class="produto" alt="Foto polaroid cabine">
@@ -159,6 +309,8 @@
                         <p class="mostruario__produto-preco">R$29.90</p>
                         <button class="mostruario__produto-botao">Comprar</button>
                     </div>
+                </div>
+                <div class="swiper-slide">
                     <div class="mostruario__produto -2">
                         <h1 class="mostruario__produto-titulo">Polaroid varal</h1>
                         <img src="/img/produto-6.png" class="produto" alt="Polaroid varal">
@@ -166,6 +318,8 @@
                         <p class="mostruario__produto-preco">R$49.90</p>
                         <button class="mostruario__produto-botao">Comprar</button>
                     </div>
+                </div>
+                <div class="swiper-slide">
                     <div class="mostruario__produto -3">
                         <h1 class="mostruario__produto-titulo">Combo love</h1>
                         <img src="/img/produto-7.png" class="produto" alt="Combo love photos">
@@ -173,6 +327,8 @@
                         <p class="mostruario__produto-preco">R$29.90</p>
                         <button class="mostruario__produto-botao">Comprar</button>
                     </div>
+                </div>
+                <div class="swiper-slide">
                     <div class="mostruario__produto -4">
                         <h1 class="mostruario__produto-titulo">Combo álbum love</h1>
                         <img src="/img/servico__foto-3.png" class="produto" alt="Combo álbum love">
@@ -181,7 +337,7 @@
                         <button class="mostruario__produto-botao">Comprar</button>
                     </div>
                 </div>
-                <div class="mostruario__produto-container">
+                <div class="swiper-slide">
                     <div class="mostruario__produto -1">
                         <h1 class="mostruario__produto-titulo">Mini pregador</h1>
                         <img src="/img/produto-8.png" class="produto" alt="Mini pregador">
@@ -189,6 +345,8 @@
                         <p class="mostruario__produto-preco">R$6.00</p>
                         <button class="mostruario__produto-botao">Comprar</button>
                     </div>
+                </div>
+                <div class="swiper-slide">
                     <div class="mostruario__produto -2">
                         <h1 class="mostruario__produto-titulo">Legendas</h1>
                         <img src="/img/produto-9.png" class="produto" alt="Legendas">
@@ -196,6 +354,8 @@
                         <p class="mostruario__produto-preco">R$0.50</p>
                         <button class="mostruario__produto-botao">Comprar</button>
                     </div>
+                </div>
+                <div class="swiper-slide">
                     <div class="mostruario__produto -3">
                         <h1 class="mostruario__produto-titulo">Calendário love ímã</h1>
                         <img src="/img/produto-10.png" class="produto" alt="Calendário love ímã">
@@ -203,6 +363,8 @@
                         <p class="mostruario__produto-preco">R$39.90</p>
                         <button class="mostruario__produto-botao">Comprar</button>
                     </div>
+                </div>
+                <div class="swiper-slide">
                     <div class="mostruario__produto -4">
                         <h1 class="mostruario__produto-titulo">Álbum de geladeira</h1>
                         <img src="/img/produto-11.png" class="produto" alt="Álbum de geladeira">
@@ -211,7 +373,7 @@
                         <button class="mostruario__produto-botao">Comprar</button>
                     </div>
                 </div>
-                <div class="mostruario__produto-container">
+                <div class="swiper-slide">
                     <div class="mostruario__produto -1">
                         <h1 class="mostruario__produto-titulo">Polaroid de mesa</h1>
                         <img src="/img/produto-12.png" class="produto" alt="Polaroid de mesa frase">
@@ -219,6 +381,8 @@
                         <p class="mostruario__produto-preco">R$34.90</p>
                         <button class="mostruario__produto-botao">Comprar</button>
                     </div>
+                </div>
+                <div class="swiper-slide">
                     <div class="mostruario__produto -2">
                         <h1 class="mostruario__produto-titulo">Polaroid de mesa</h1>
                         <img src="/img/produto-13.png" class="produto" alt="Polaroid de mesa frase + QR code">
@@ -226,6 +390,8 @@
                         <p class="mostruario__produto-preco">R$34.90</p>
                         <button class="mostruario__produto-botao">Comprar</button>
                     </div>
+                </div>
+                <div class="swiper-slide">
                     <div class="mostruario__produto -3">
                         <h1 class="mostruario__produto-titulo">Ímã 6x6</h1>
                         <img src="/img/produto-14.png" class="produto" alt="Ímã 6x6">
@@ -233,6 +399,8 @@
                         <p class="mostruario__produto-preco">R$39.90</p>
                         <button class="mostruario__produto-botao">Comprar</button>
                     </div>
+                </div>
+                <div class="swiper-slide">
                     <div class="mostruario__produto -3">
                         <h1 class="mostruario__produto-titulo">Frete</h1>
                         <img src="/img/frete.png" class="produto" alt="Frete">
@@ -242,6 +410,8 @@
                     </div>
                 </div>
             </div>
+            </div>
+        </div>
     </section>
     <section id="colaboradores" class="colaboradores">
         <div class="colaborador-1">
@@ -267,5 +437,4 @@
             <a href="https://www.instagram.com/lovephotooficial/"><i class="fa-brands fa-instagram"></i></a>
         </div>
     </section>
-</body>
 </html>
