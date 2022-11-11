@@ -1,5 +1,5 @@
-.contato {
-    padding: 2em;
+.contato__desktop {
+    padding: 2em 0;
     background-color: var(--cor-de-fundo);
     text-align: center;
     display: flex;
@@ -35,4 +35,54 @@
     padding-top: .5em;
     color: var(--branco);
     font-size: 3em;
+}
+
+.contato__mobile {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .contato__mobile {
+        padding: 1em;
+        display: flex;
+        background-color: var(--cor-de-fundo);
+        color: var(--branco);
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .contato__desktop {
+        display: none;
+    }
+
+    .contato__aviso__mobile,
+    .contato__telefones-rede__mobile {
+        width: 50vh;
+    }
+
+    .contato__titulo__mobile {
+        padding: .8em 0;
+        color: var(--branco);
+        font-weight: 700;
+    }
+    
+    .contato__fone__mobile {
+        color: var(--branco);
+    }
+    
+    .contato__texto__mobile {
+        color: var(--branco);
+        font-size: .8em;
+        padding: 0 5em;
+    }
+    
+    .fa-instagram {
+        padding-top: .5em;
+        color: var(--branco);
+        font-size: 3em;
+    }
+
 }
