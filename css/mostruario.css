@@ -98,7 +98,19 @@
     display: none;
 }
 
+.fa-arrow-right-arrow-left {
+    display: none;
+}
+
 @media screen and (max-width: 1024px) {
+
+    .fa-arrow-right-arrow-left {
+        display: block;
+        color: var(--branco);
+        font-size: 2em;
+        text-align: center;
+        padding-top: .5em;
+    }
 
     .swiper__titulo {
         font-weight: 700;
